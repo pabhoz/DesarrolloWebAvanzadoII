@@ -13,19 +13,24 @@ header{
 body{
 	padding: 15px;
 }
+body, html{
+	height: 100%;
+}
 #Contenido{
 	border: 1px solid gray;
 	width: 64.5%;
-	display: inline-block;
 	vertical-align: top;
 	padding: 25px;
+}
+#Contenido, #Eventos{
+	height: 87%;
+	display: inline-block;
 }
 
 #Eventos{
 	overflow-y:auto;
 	border: 1px solid gray;
 	width: 35%;
-	display: inline-block;
 }
 
 #Eventos div{
