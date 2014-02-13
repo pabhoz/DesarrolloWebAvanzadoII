@@ -1,0 +1,49 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+h1{
+	padding: 0px;
+	margin: 0px;
+}
+header{
+	margin-bottom: 10px;
+}
+body{
+	padding: 15px;
+}
+#Contenido{
+	border: 1px solid gray;
+	width: 64.5%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 25px;
+}
+
+#Eventos{
+	overflow-y:auto;
+	border: 1px solid gray;
+	width: 35%;
+	display: inline-block;
+}
+
+#Eventos div{
+	background: rgba(0,0,0,0.5);
+}
+
+#Eventos ul li, #Eventos div{
+	list-style: none;
+	padding: 25px;
+	cursor: pointer;
+}
+
+#Eventos ul li:hover{
+	background: rgba(0,0,0,0.1);
+}
+
+header h1{
+	padding: 20px;
+	text-align: center;
+	border: 1px solid gray;
+}

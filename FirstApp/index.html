@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="esp">
+<head>
+	<meta charset="UTF-8">
+	<title>My First Fabulous Super Cool Hipster App</title>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/stylesheet.css">
+</head>
+<body>
+	<header>
+		<h1>My First App</h1>
+	</header>
+	<div id="Eventos">
+		<ul>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+			<li>Some Lipsum Text</li>
+		</ul>
+		<div>
+			Crear Evento
+		</div>
+	</div>
+	<div id="Contenido">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium, dicta, quis, doloremque officiis officia perspiciatis voluptatibus expedita dolores fugiat hic quidem nam eveniet quibusdam cumque soluta dolore veritatis nesciunt suscipit.
+	</div>
+	<script>
+	var ventana = screen.availHeight;
+	console.log(ventana);
+	var altoHeader = document.getElementsByTagName('header')[0].clientHeight;
+	console.log(altoHeader);
+
+	var tamanoTales = ventana - (altoHeader + 130);
+
+	console.log("Ev: "+tamanoTales);
+
+	document.getElementById("Eventos").style.height = tamanoTales+'px';
+	document.getElementById("Contenido").style.height = tamanoTales+'px';
+	</script>
+</body>
+</html>
