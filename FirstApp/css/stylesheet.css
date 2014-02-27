@@ -34,7 +34,7 @@ body, html{
 }
 
 #Eventos div{
-	background: rgba(0,0,0,0.5);
+	background: rgba(0,0,0,1);
 }
 
 #Eventos ul li, #Eventos div{
@@ -45,6 +45,12 @@ body, html{
 
 #Eventos ul li:hover{
 	background: rgba(0,0,0,0.1);
+}
+
+#eventCreator{
+	position: absolute;
+	bottom: 2%;
+	z-index: 99;
 }
 
 header h1{

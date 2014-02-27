@@ -1,0 +1,78 @@
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+}
+
+header{
+	height: 215px;
+	border: 1px solid gray;
+	border-top: 6px solid black;
+	margin: auto auto;
+}
+
+header, nav#mainMenu, #content{
+	width: 100%;
+	max-width: 970px;
+}
+
+header .superior{
+	height: 160px;
+}
+nav#mainMenu{
+	height: 50px;
+}
+#mainMenu ul{margin-left: -40px;}
+#mainMenu li{
+	list-style: none;
+	display: inline-block;
+}
+#mainMenu a{
+	text-decoration: none;
+	padding: 15px 22px 11px 22px;
+	color: black;
+	font-size: 115%;
+	transition: all 0.5s;
+	font-weight: bold;
+}
+#mainMenu a:hover{
+	background-color: yellow;
+}
+
+#logo{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 186px;
+	height: 111px;
+	border: 1px solid black;
+}
+header .socialNetworks{
+	float: right;
+	width: 186px;
+	border: 1px solid black;
+}
+
+header .socialNetworks div{
+float: right;
+}
+
+#content{ margin: auto auto; padding: 20px 0;}
+#content section{
+	float: left;
+	width: 650px;
+	height: 400px;
+	border: 1px solid black;
+	margin: auto auto;
+}
+#content .lateralDerecho{
+	float: right;
+	width: 300px;
+	height: 400px;
+	border: 1px solid black;
+	margin: auto auto;
+}
