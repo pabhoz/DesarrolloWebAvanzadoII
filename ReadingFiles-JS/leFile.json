@@ -1,0 +1,28 @@
+{
+	"desarrolloWebAvanzado":{
+		"id" : 75363,
+		"docente" : "Pablo Bejarano",
+		"estudiantes": [
+
+			{ 		
+				"nombre" : "Camilo",
+				"nivel"  : 20,
+				"clase"  : "No-muerto"
+			},
+			
+			{ 		
+				"nombre" : "Paulita",
+				"nivel"   : 18,
+				"clase"  : "Elfa de sangre"
+			},
+
+			{ 		
+				"nombre" : "Tatianita",
+				"nivel"   : 18,
+				"clase"  : "Elfa de sangre"
+			},
+		]
+		
+	}
+
+}

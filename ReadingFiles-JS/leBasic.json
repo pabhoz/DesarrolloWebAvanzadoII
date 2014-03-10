@@ -1,0 +1,14 @@
+{
+	"menu":{
+		"nombre" : "foo",
+		"submenu":{
+					"elemento": [
+						{ "nombre" : "value", "accion" : "Home" },
+						{ "nombre" : "value", "accion" : "Ceballos" },
+						{ "nombre" : "value", "accion" : "Fantasmita" }
+					]
+				} 
+			},
+	}
+
+}
