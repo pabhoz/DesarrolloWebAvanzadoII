@@ -3,9 +3,9 @@
 		"nombre" : "foo",
 		"submenu":{
 					"elemento": [
-						{ "nombre" : "value", "accion" : "Home" },
-						{ "nombre" : "value", "accion" : "Ceballos" },
-						{ "nombre" : "value", "accion" : "Fantasmita" }
+						{ "nombre" : "menu1", "accion" : "Home", "index" : 1 },
+						{ "nombre" : "menu2", "accion" : "Ceballos", "index" : 2 },
+						{ "nombre" : "menu3", "accion" : "Fantasmita", "index" : 3 }
 					]
 				} 
 			},

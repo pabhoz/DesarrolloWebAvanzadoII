@@ -13,5 +13,48 @@
 		<h4>Este es un archivo XML de ejemplo:</h4>
 		<h6>XML está fuera de moda U_U</h6>
 		<p><a href="./leBasic.xml" target="_BLANK">leBasic.xml</a></p>
+		<h2>Espacio de pruebas!!!</h2>
+		<div id="test"></div>
+		<!-- A-->
+		<script>
+		var json = '{ "desarrolloWebAvanzado": {"id" : 75363, "docente" : "Pablo Bejarano", "estudiantes" : [ { "nombre" : "Camilito", "nivel" : 20 , "clase" : "No-muerto"}, {"nombre" : "Paulita", "nivel" : 80 , "clase" : "Elfa de sangre"} , {"nombre" : "Tatiana", "nivel" : 16 , "clase" : "Mega Troll Berrugoso"} ] } }';
+		var parsedJSON = JSON.parse(json);
+
+		console.log("json: "+ json);
+		console.log(parsedJSON);
+		console.log(parsedJSON.desarrolloWebAvanzado.estudiantes[2]);
+
+		var estudiantes = parsedJSON.desarrolloWebAvanzado.estudiantes;
+		var testSpace = document.getElementById("test");
+		var table = document.createElement("table");
+		table.border = 1;
+		var  count = Object.keys(estudiantes[0]).length;
+		//Al pelo por la moni
+		for (var j = count-1; j >=0; j--) {
+			table.insertRow(0);
+			for (var i = 0; i < estudiantes.length; i++) {
+				var currentKey = Object.keys(estudiantes[0])[i];
+				table.rows[0].insertCell(i);
+				table.rows[0].cells[i].innerHTML = estudiantes[j][currentKey];
+			};
+		};
+
+		var tHeader = table.createTHead().insertRow(0);
+		tHeader.insertCell().innerHTML ="Clase";
+		tHeader.insertCell().innerHTML ="Level";
+		tHeader.insertCell().innerHTML ="Nombre";
+
+		console.log(table);
+		testSpace.appendChild(table);
+
+		</script>
+		<style>
+			table tr td{
+				padding: 5px;
+			}
+			table thead{
+				background-color: rgba(0,0,0,0.2);
+			}
+		</style>
 	</body>
 </html>
