@@ -1,0 +1,7 @@
+<menu nombre="foo">
+	<submenu>
+		<elemento nombre="value" accion="Home" index="1" />
+		<elemento nombre="value" accion="Ceballos" index="2" />
+		<elemento nombre="value" accion="Fantasmita" index="3" />
+	</submenu>
+ </menu>

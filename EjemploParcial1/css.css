@@ -1,0 +1,39 @@
+*{
+    box-sizing:border-box;
+}
+#noticias{
+    width:40%;
+}
+.noticia{
+    display:inline-block;
+    padding:10px;
+    margin: auto auto 10px 3px;
+    border: 1px solid gray;
+}
+.noticia .cabecera{
+    margin: 0px 0px 5px 0px;
+}
+.noticia .cabecera .titulo{
+    font-size:140%;
+    font-weight:bold;
+    padding:5px 5px 5px 2px;
+    border-bottom: 1px solid gray;
+}
+.noticia .cabecera .fecha{
+    font-size:80%;
+    float:right;
+    padding:5px 5px 5px 2px;
+}
+.noticia .cabecera .autor{
+    font-size:80%;
+    padding:5px 5px 5px 2px;
+}
+.grande{
+    width:99.5%;   
+}
+.mediana{
+    width:49.5%;   
+}
+.pequena{
+    width:24.5%;   
+}

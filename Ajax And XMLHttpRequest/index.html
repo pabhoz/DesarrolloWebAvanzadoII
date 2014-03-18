@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTH-8"/>
+		<title>Ajax & XMLHttpRequest</title>
+		<style>
+			body{
+				padding: 20px;
+			}
+            #explanation{
+                border:1px solid rgba(0,0,0,0.2);
+                padding:10px;
+            }
+            
+            #explanation h3,
+            #explanation h4,
+            #explanation h5{
+                color: rgba(0,0,0,0.8);
+                padding:10px;
+                border-left: 6px solid rgba(0,0,200,0.5);
+                display:inline;
+                margin-left: -2px;
+            }
+            #explanation .answer{
+                padding:10px;
+                border-bottom: 1px solid gray;
+                box-shadow: 1px 8px 10px rgba(0,0,0,0.2);
+                margin: 1px 0 20px 0;
+            }
+            article{
+                padding: 5px 0 5px 0;
+            }
+		</style>
+	</head>
+	<body>
+		<div id="explanation">
+			<h1>XMLHttpRequest</h1>
+            <article>
+                <h3>¿Que es?</h3>
+                <div class="answer">
+                    <p>Es una interfaz empleada para realizar peticiones HTTP y HTTPS a servidores Web. Para los datos transferidos se usa cualquier codificación basada en texto, incluyendo: texto plano,<b>XML, JSON</b>, HTML y codificaciones particulares específicas.</p>
+                    <p>Esta interfaz no es propia de JS, de hecho se implementa en lenguajes como C++, C#, JAVA, etc...</p>
+                </div>
+            </article>
+            
+            <article>
+                <h3>¿Entonces XMLHttpRequest es AJAX?</h3>
+                <div class="answer"><p>No! Para eso te estoy diciendo que es arriba... Hay que leer</p></div>
+            </article>
+            
+            <article>
+                <h3>¿Entonces que es AJAX?</h3>
+                <div class="answer"><p>JavaScript asíncrono y XML es una técnica de desarrollo web para la creación de aplicaciones interactivas (RIA)</p>
+                <h4>¿Como funciona?</h4>
+                <p>Se realiza la carga de datos en segundo plano sin necesidad de recargar el sitio (realizar nuevamente una petición HTTP <b>explicita</b>), en su lugar se realiza una petición con XMLHttpRequest al servidor y se procesa la respuesta en el cliente.</p>
+                <h4>¿Y el AJAX si goza?</h4>
+                <p>Claro que si! Ya no tenes que estar refrescando tu navegador para que las cosas sucedan. Ajax está basado en estándares abiertos tales como JavaScript y DOM, por eso es posible implementarlo como multiplataforma.</p>
+                </div>
+            </article>
+            <article>
+                <h3>Manos a la obra</h3>
+                <p>
+                ver código: <a href="XHR.js" target="_blank">XMLHttpRequest Example Code!</a></p>
+                <p>
+                Ver en acción: <a href="XHR.html" target="_blank">XMLHttpRequest Example!</a></p>
+            </article>
+		</div>
+	</body>
+</html>
