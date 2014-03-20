@@ -1,6 +1,16 @@
 *{
     box-sizing:border-box;
 }
+.newsImg{
+    width: 40%;
+}
+.newsImg img{
+    width:100%;
+}
+.fullImg img{
+    width:100%;
+}
+
 #noticias{
     width:40%;
 }
