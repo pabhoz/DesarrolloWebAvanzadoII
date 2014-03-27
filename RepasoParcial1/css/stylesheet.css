@@ -1,0 +1,72 @@
+*{
+    box-sizing:border-box;
+}
+
+body{margin:0;}
+
+#header, #container,#footer{
+    border: 1px solid gray;
+    width:970px;
+    margin:auto auto;
+}
+
+#header{
+ min-height:150px;
+    
+}
+
+#container{
+    border:none;
+    margin-top: 15px;
+}
+
+#cuerpo,#lateral{
+    display: inline-block;
+    float:left;
+    margin-right: 10px;
+}
+#cuerpo{
+    width:68.94%;
+    min-height:500px;
+    border: 1px solid gray;
+    padding:10px;
+}
+
+#cuerpo div{
+ display:inline-block;
+    margin-bottom: 5px;
+}
+#cuerpo .full,#lateral .full{
+    width:100%;
+   border: 1px solid gray;
+    min-height: 250px;
+}
+#cuerpo .medio,#lateral .medio{
+    width: 49.5%;
+   border: 1px solid gray;
+    min-height: 250px;
+}
+#cuerpo .tercio{
+    width: 32.9%;
+   border: 1px solid gray;
+    min-height: 250px;
+}
+#cuerpo .dosTercios{
+    width: 65.9%;
+   border: 1px solid gray;
+    min-height: 250px;
+}
+
+#lateral{
+    width: 29%;
+    min-height:500px;
+    border: 1px solid gray;
+    padding:10px;
+}
+
+#footer{
+    float:left;
+    min-height:150px;
+    width:100%;
+    margin-top:15px;
+}

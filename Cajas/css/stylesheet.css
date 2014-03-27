@@ -2,16 +2,35 @@
 	box-sizing: border-box;
 }
 
+.buttonContainer{
+    padding:5px;
+    border: 1px solid gray;
+}
+.buttonContainer .element{
+    width: 100%;
+    min-height: 80px;
+    border: 1px solid gray;
+    margin: 0 0 5px 0;
+}
+.footer{
+    float:left;
+    min-height: 200px;
+    width:100%;
+    border:1px solid gray;
+    margin: 10px 0 0 0;
+    background-color: rgba(0,0,0,0.2);
+}
 html,body{
 	width: 100%;
 	height: 100%;
 	margin: 0px;
+    font-family: 'Duru Sans', sans-serif;
 }
 
 header{
 	height: 215px;
 	border: 1px solid gray;
-	border-top: 6px solid black;
+	border-top: 6px solid gray;
 	margin: auto auto;
 }
 
@@ -25,6 +44,7 @@ header .superior{
 }
 nav#mainMenu{
 	height: 50px;
+    border-top:1px solid gray;
 }
 #mainMenu ul{margin-left: -40px;}
 #mainMenu li{
@@ -34,13 +54,14 @@ nav#mainMenu{
 #mainMenu a{
 	text-decoration: none;
 	padding: 15px 22px 11px 22px;
-	color: black;
-	font-size: 115%;
+	color: rgba(0,0,0,0.7);
+	font-size: 90%;
 	transition: all 0.5s;
 	font-weight: bold;
 }
 #mainMenu a:hover{
-	background-color: yellow;
+	background-color: gray;
+    color: white;
 }
 
 #logo{
@@ -49,12 +70,96 @@ nav#mainMenu{
 	margin-left: 20px;
 	width: 186px;
 	height: 111px;
-	border: 1px solid black;
 }
-header .socialNetworks{
-	float: right;
-	width: 186px;
+
+#logo,.socialNetworks{
+    margin-top: 20px;
+    border: 1px solid gray;
+}
+
+.socialNetworks{
+    float: right;
 	border: 1px solid black;
+    margin-right:20px;
+}
+
+.socialNetworks div{
+    min-width:40px;
+    min-height: 40px;
+    margin:5px 5px 5px 5px;
+    border: 1px solid gray;
+}
+
+.lateralDerecho{
+    float: left;
+	width: 300px;
+	margin: auto auto;
+}
+
+.lateralRibonTitle,
+.lateralTitle{
+    border:1px solid gray;
+    min-height:50px;
+}
+.lateralRibonTitle + .container{
+    min-height:310px;
+    margin: auto auto;
+    width:95%;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding:5px;
+}
+.lateralTitle{
+    margin-bottom: 5px;
+}
+.lateralDerecho .module{
+    padding:5px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    position:relative;
+}
+.lateralDerecho .sponsor{
+    min-height:300px;
+    border: 1px solid gray;
+}
+.lateralDerecho .small{
+    min-height:130px;
+}
+section{
+    position:relative;
+    padding:10px;
+    margin:auto auto;
+    border: 1px solid gray;
+}
+section article{
+    border: 1px solid gray;
+    min-height: 230px;
+    padding: 5px;
+    margin-bottom: 10px;
+    width:100%;
+    display:inline-block;
+}
+section article.bigOne{
+    min-height:360px;
+}
+section article.tercio{
+    width:32.5%;
+    min-height: 285px;
+    margin:auto auto;
+    margin-bottom: 10px;
+}
+section article.dosTercios{
+    width:65.8%;
+    min-height: 285px;
+    margin:auto auto;
+    margin-bottom: 10px;
+}
+section article.medio{
+    width:49.5%;
+    min-height: 285px;
+    margin:auto auto;
+    margin-bottom: 10px;
 }
 
 header .socialNetworks div{
@@ -62,17 +167,33 @@ float: right;
 }
 
 #content{ margin: auto auto; padding: 20px 0;}
-#content section{
+#content .lateralIzquierdo{
 	float: left;
 	width: 650px;
-	height: 400px;
-	border: 1px solid black;
-	margin: auto auto;
+	margin: auto 15px auto 0;
 }
-#content .lateralDerecho{
-	float: right;
-	width: 300px;
-	height: 400px;
-	border: 1px solid black;
-	margin: auto auto;
+
+.zonaComercial{
+    margin: 5px 0 0 0;
+    float:left;
+    width: 100%;
+    padding:5px;
+    border:1px solid gray;
+}
+.zonaComercial .title{
+    padding:5px;
+    margin-bottom: 5px;
+    display:inline-block;
+}
+.zonaComercial ul{
+    margin: auto auto;
+}
+.zonaComercial ul li{
+    list-style:none;
+    display:inline-block;
+    width:120px;height:120px;
+    border:1px solid gray;
+    vertical-align:middle;
+    text-align:center;
+    margin:0 10px 10px 0;
 }
