@@ -1,0 +1,199 @@
+* {
+    -webkit-box-sizing: border-box; /* Safari other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+html {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    width: 100%;
+    height: 100%;
+    font-family: 'Duru Sans', sans-serif;
+}
+
+a:hover,a,a:visited,a:active {
+    text-decoration: none;
+} 
+
+
+.buttonContainer{
+    padding:5px;
+    border: 1px solid gray;
+}
+.buttonContainer .element{
+    width: 100%;
+    height: 80px;
+    border: 1px solid gray;
+    margin: 0 0 5px 0;
+}
+.footer{
+    float:left;
+    min-height: 200px;
+    width:100%;
+    border:1px solid gray;
+    margin: 10px 0 0 0;
+    background-color: rgba(0,0,0,0.2);
+}
+
+header{
+    height: 60px;
+    border: 1px solid gray;
+    border-top: 6px solid gray;
+    margin: auto auto;
+}
+
+header, nav#mainMenu, #content{
+    width: 100%;
+    max-width: 970px;
+}
+
+header .superior{
+    height: inherit;
+}
+nav#mainMenu{
+    height: 40px;
+    border-top:1px solid gray;
+}
+#mainMenu ul{margin-left: -40px;}
+#mainMenu li{
+    list-style: none;
+    display: inline-block;
+}
+#mainMenu a{
+    text-decoration: none;
+    padding: 15px 22px 11px 22px;
+    color: rgba(0,0,0,0.7);
+    font-size: 90%;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+#mainMenu a:hover{
+    background-color: gray;
+    color: white;
+}
+.lateralDerecho{
+    float: left;
+    width:29.5%;
+    margin: auto auto;
+}
+
+.lateralRibonTitle,
+.lateralTitle{
+    border:1px solid gray;
+    height:50px;
+}
+.lateralRibonTitle + .container{
+    min-height:310px;
+    margin: auto auto;
+    width:95%;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    padding:5px;
+}
+.lateralTitle{
+    margin-bottom: 5px;
+}
+.lateralDerecho .module{
+    padding:5px;
+    border: 1px solid gray;
+    margin-bottom: 10px;
+    position:relative;
+}
+.lateralDerecho .sponsor{
+    min-height:29.5%;
+    border: 1px solid gray;
+}
+.lateralDerecho .small{
+    min-height:130px;
+}
+section{
+    position:relative;
+    padding:10px;
+    margin:auto auto;
+    border: 1px solid gray;
+}
+section article{
+    border: 1px solid gray;
+    min-height: 230px;
+    padding: 5px;
+    margin-bottom: 10px;
+    width:100%;
+    display:inline-block;
+}
+section article.bigOne{
+    height:360px;
+}
+section article.tercio{
+    width:32.5%;
+    min-height: 285px;
+    margin:auto auto;
+    margin-bottom: 10px;
+}
+section article.dosTercios{
+    width:65.8%;
+    min-height: 285px;
+    margin:auto auto;
+    margin-bottom: 10px;
+}
+section article.medio{
+    width:49.5%;
+    min-height: 285px;
+    margin:auto auto;
+    margin-bottom: 10px;
+}
+
+header .socialNetworks div{
+float: right;
+}
+
+#content{ margin: auto auto; padding: 20px 0;}
+#content .lateralIzquierdo{
+    float: left;
+    width: 68.5%;
+    margin: auto 15px auto 0;
+}
+
+/**** MEDIA QUERIES ******/
+@media screen and (max-width:900px) {
+    article.bigOne {
+        max-height:260px;
+    }
+    .noticias, .lateralDerecho{
+        padding: 0px;
+        border: 0px;
+    }
+    .module{
+        padding: 0px !important;
+    }
+    .module .element{
+        max-height: 60px;
+    }
+    .lateralTitle{
+        max-height: 30px;
+    }
+    .footer{
+        display: none;
+    }
+}
+
+@media screen and (max-width:780px) {
+    article.bigOne {
+        max-height:160px;
+    }
+    article:not(.bigOne){
+        display: none;
+    }
+    .lateralIzquierdo, .lateralDerecho, header{
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0px 15px;
+    }
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
+}
